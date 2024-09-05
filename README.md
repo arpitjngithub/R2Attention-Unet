@@ -1,17 +1,8 @@
-# R2attention Unet for Semantic Segmentation
+# R2Attention U-Net for Enhanced Semantic Segmentation
+This repository features the implementation of the R2Attention U-Net model for semantic segmentation, employing an innovative training strategy that combines image patching with selective patch removal. This method has yielded significant accuracy gains compared to conventional techniques.
 
-This repository implements the R2attention Unet model for semantic segmentation, with a unique training approach involving image patching and selective patch removal based on mask content. The approach has significantly improved accuracy compared to traditional methods.
+# Training Methodology
+To optimize model performance, images were padded to dimensions divisible by 224 (e.g., from 1024x1360 to 1024x1560). During training, patches containing only mask label 0 were excluded, allowing the model to focus on more informative regions. This approach resulted in a substantial accuracy improvement, increasing from 23% to 39%.
 
-
-## Training Approach 
-
-We padded images to ensure divisibility by 224 (e.g., from 1024x1360 to 1024x1560) and implemented a strategy to remove patches with masks labeled only 0 during training. This focused the model on more informative regions, resulting in a notable accuracy improvement from 23% to 39%.
-
-Contact
-
-For questions or collaborations, feel free to reach out at suraj.prasad@iitb.ac.in.
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Feel free to customize this template further based on additional details about your project or specific instructions you want to provide. Once you have filled in the specifics, you can save this content as your README.md file in your GitHub repository.
-
-
+# Contact Information
+For inquiries or collaboration opportunities, please contact arpitjain8302@gmail.com
